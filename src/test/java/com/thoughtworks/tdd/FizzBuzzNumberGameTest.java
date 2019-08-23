@@ -14,4 +14,11 @@ public class FizzBuzzNumberGameTest {
 		String word = fizzBuzzNumberGame.fizzBuzz(number);
 		Assertions.assertEquals("1", word);
 		}
+	@Test
+	public void should_return_Fizz_when_fizzBuzz_given_3() {
+		int number = 3;
+		FizzBuzzNumberGame fizzBuzzNumberGame = new FizzBuzzNumberGame();
+		String word = fizzBuzzNumberGame.fizzBuzz(number);
+		Assertions.assertEquals("Fizz", word);
+		}
 }
